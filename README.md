@@ -20,5 +20,12 @@ npm run build
 npm run lint
 ```
 
+### Configure Vue-Vanta 
+add <style scoped> in vanta.vue located in node_modules/vue-vanta/src
+  <style scoped>
+    .vanta-container{
+        height: 100vh;
+    }
+  </style>
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
