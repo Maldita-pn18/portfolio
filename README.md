@@ -27,5 +27,8 @@ add <style scoped> in vanta.vue located in node_modules/vue-vanta/src
         height: 100vh;
     }
   </style>
+ ```
+### pdf file located in public/resume.pdf
+ ```
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
