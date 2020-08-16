@@ -119,6 +119,7 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .card-container {
   background-color: #231e39;
   border-radius: 5px;

@@ -11,6 +11,7 @@
     "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap-vue": "^2.16.0",
     "core-js": "^3.6.5",
+    "pdfvuer": "^1.7.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vue-vanta": "0.0.1"
@@ -36,8 +37,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "@vue/standard"
+      "plugin:vue/base"
     ],
     "parserOptions": {
       "parser": "babel-eslint"

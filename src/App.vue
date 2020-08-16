@@ -7,7 +7,7 @@
           <b-navbar-nav>
             <b-nav-item @click="redirect('/')">Home</b-nav-item>
             <b-nav-item @click="redirect('/about')">About</b-nav-item>
-            <b-nav-item>Resume`</b-nav-item>
+            <b-nav-item @click="redirect('/resume')">Resume</b-nav-item>
             <b-nav-item @click="redirect('/project')">Projects</b-nav-item>
             <b-nav-item @click="redirect('/contact')">Contact</b-nav-item>
           </b-navbar-nav>

@@ -4,125 +4,95 @@
       <div class="box" v-for="( element, index) in rowProjects[0]" :key="index">
         <img :src="element">
         <div class="overlay"></div>
-        <!-- <a class="more" data-toggle="modal" v-b-modal.rowProjects[1][index]>Read more</a> -->
-        <b-button v-b-modal.rowProjects[1][index]>{{rowProjects[1][index]}}</b-button>
+        <b-button v-b-modal="rowProjects[1][index]" class="projectInfo">View Info</b-button>
       </div>
     </div>
-    <div>
-        <br>
-        <br>
-        <br>
-        <b-button v-b-modal.modal-1>Launch demo modal</b-button>
-        <b-modal id="modal-1" title="BootstrapVue">
-            <p class="my-4">Hello from modal! asdf</p>
-        </b-modal>
-    </div>
-    <b-modal id="myModal1" class="modal card-container">
-        <div class="card">
-            <div class="col-sm-12 text-right">
-                <a data-dismiss="modal" style="font-size: 15px">X</a>
-            </div>
-            <img class="card-img-top" :src="require('../assets/bus.png')" alt="Card image cap">
-            <div class="card-body">
-                <h1>LinkOD</h1>
-                <h4>Bus Reservation System</h4>
-                <p>A web application that will allocate seats to passengers and can reserve bus tickets digitally.</p>
-            </div>
-          <br>
+    <b-modal id="myModal1" class="modal card-container" size="lg" hide-footer>
+        <template v-slot:modal-title>
+            <h1>LinkOD</h1>
+        </template>
+        <img class="card-img-top" :src="require('../assets/bus.png')" alt="Card image cap">
+        <div class="col-sm-12">
+            <h4>Bus Reservation System</h4>
+            <p>A web application that will allocate seats to passengers and can reserve bus tickets digitally.</p>
+            <p>TOOLS:</p>
+            <ul>
+                <li>ReactJs</li>
+                <li>Node-Express</li>
+                <li>NoSql (MongoDB)</li>
+            </ul>
         </div>
-        <br>
-        <p>TOOLS:</p>
-        <ul>
-            <li>ReactJs</li>
-            <li>Node-Express</li>
-            <li>NoSql (MongoDB)</li>
-        </ul>
         <div class="col-sm-12 text-right">
-            <a href="https://github.com/Maldita-pn18/jailmanagement">
-                <i class="fa fa-github hub"></i>
+            <a href="https://github.com/Maldita-pn18/linkod">
+                <i class="fab fa-github githubIcon"></i>
             </a>
         </div>
     </b-modal   >
-    <div id="myModal2" class="modal card-container">
-        <div class="card">
-            <div class="col-sm-12 text-right">
-             <a data-dismiss="modal" style="font-size: 15px">X</a>
-            </div>
-            <img class="card-img-top" :src="require('../assets/jims.png')" alt="Card image cap">
-            <div class="card-body">
-                <h1>JIMS</h1>
-                <h4>Jail Information Management System</h4>
-                <p>Jail Management products are designed to help agencies efficiently track and process inmate's visitors from booking.</p>
-            </div>
-            <br>
+    <b-modal id="myModal2" class="modal card-container" size="lg" hide-footer>
+        <template v-slot:modal-title>
+            <h1>JIMS</h1>
+        </template>
+        <img class="card-img-top" :src="require('../assets/jims.png')" alt="Card image cap">
+        <div class="col-sm-12">
+            <h4>Jail Information Management System</h4>
+            <p>Jail Management products are designed to help agencies efficiently track and process inmate's visitors from booking.</p>
+            <p>TOOLS:</p>
+            <ul>
+                <li>Angular</li>
+                <li>Node-Express</li>
+            </ul>
         </div>
-        <br>
-        <p>TOOLS:</p>
-        <ul>
-            <li>Angular</li>
-            <li>Node-Express</li>
-        </ul>
         <div class="col-sm-12 text-right">
-            <a href="https://github.com/Maldita-pn18/linkod">
-            <i class="fa fa-github hub"></i>
+            <a href="https://github.com/Maldita-pn18/jailmanagement">
+                <i class="fab fa-github githubIcon"></i>
             </a>
         </div>
-    </div>
-    <div id="myModal3" class="modal card-container">
-        <div class="card">
-            <div class="col-sm-12 text-right">
-                <a data-dismiss="modal" style="font-size: 15px">X</a>
-            </div>
-            <img class="card-img-top" :src="require('../assets/mqtt.png')" alt="Card image cap">
-            <div class="card-body">
-                <h1>MQTT</h1>
-                <h4>MQTT Website Application</h4>
-                <p>The web app connects using MQTT as the transport protocol, running over WebSockets. MQTT for clients is in the subscription of MQTT data from a server that retrieves and displays node data.</p>
-            </div>
-            <br>
+    </b-modal>
+    <b-modal id="myModal3" class="modal card-container" size="lg" hide-footer>
+        <template v-slot:modal-title>
+            <h1>MQTT</h1>
+        </template>
+        <img class="card-img-top" :src="require('../assets/mqtt.png')" alt="Card image cap">
+        <div class="col-sm-12">
+            <h4>MQTT Website Application</h4>
+            <p>The web app connects using MQTT as the transport protocol, running over WebSockets. MQTT for clients is in the subscription of MQTT data from a server that retrieves and displays node data.</p>
+            <p>TOOLS:</p>
+            <ul>
+                <li>Node-Express</li>
+            </ul>
         </div>
-        <br>
-        <p>TOOLS:</p>
-        <ul>
-            <li>Node-Express</li>
-        </ul>
-        <div class="col-sm-3 text-right">
+        <div class="col-sm-12">
             <a href="https://maldita-pn18.github.io/">View Site</a>
         </div>
-        <div class="col-sm-9 text-right">
+        <div class="col-sm-12 text-right">
             <a href="https://github.com/Maldita-pn18/Maldita-pn18.github.io">
-                <i class="fa fa-github hub"></i>
+                <i class="fab fa-github githubIcon"></i>
             </a>
         </div>
-      </div>
-      <div id="myModal4" class="modal card-container">
-            <div class="card">
-                <div class="col-sm-12 text-right">
-                    <a data-dismiss="modal" style="font-size: 15px">X</a>
-                </div>
-                <img class="card-img-top" :src="require('../assets/chat.png')" alt="Card image cap">
-                <div class="card-body">
-                    <h1>WeChat</h1>
-                    <h4>A Chat Application</h4>
-                    <p>Communication channel between a client and a server. This means that the server can push messages to clients.</p>
-                </div>
-                <br>
-            </div>
-            <br>
+    </b-modal>
+    <b-modal id="myModal4" class="modal card-container" size="lg" hide-footer>
+        <template v-slot:modal-title>
+            <h1>WeChat</h1>
+        </template>
+        <img class="card-img-top" :src="require('../assets/chat.png')" alt="Card image cap">
+        <div class="col-sm-12">
+            <h4>A Chat Application</h4>
+            <p>Communication channel between a client and a server. This means that the server can push messages to clients.</p>
             <p>TOOLS:</p>
             <ul>
                 <li>Socket.io</li>
                 <li>Node-Express</li>
             </ul>
-            <div class="col-sm-3 text-right">
+        </div>
+        <div class="col-sm-12">
             <a href="https://heroku-mgc.herokuapp.com/">View Site</a>
-            </div>
-            <div class="col-sm-9 text-right">
+        </div>
+        <div class="col-sm-12 text-right">
             <a href="https://github.com/Maldita-pn18/heroku-node-cordoto">
-                <i class="fa fa-github hub"></i>
+                <i class="fab fa-github githubIcon"></i>
             </a>
-            </div>
-      </div>
+        </div>
+    </b-modal>
   </div>
 </template>
 
@@ -144,6 +114,28 @@ export default {
 }
 </script>
 <style scoped>
+.projectInfo{
+    border-radius: 0px;
+    width: 130px;
+    margin-top: -90px;
+    margin-left: 15px;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+    z-index: 10;
+    position: relative;
+}
+.projectInfo:hover{
+    background-color: #0e76a8;
+    border: 2px solid #0e76a8;
+}
+.card-img-top{
+  width: 100%;
+  height: 320px;
+}
+.githubIcon{
+  font-size: 45px;
+}
 .main {
   position: absolute !important;
   top: 15% !important;
@@ -200,12 +192,10 @@ export default {
   transition: all 0.5s ease-in-out;
 }
 
-.box:hover a {
-  opacity: 1;
-  background: #ffffff;
-  color: #000000;
-  margin: -40px 0px 0px 15px;
-  border-radius: 1px;
+.box:hover .projectInfo {
+  background-color: #0e76a8;
+  border: 2px solid #0e76a8;
+  color: white;
 }
 
 .box a:hover {
