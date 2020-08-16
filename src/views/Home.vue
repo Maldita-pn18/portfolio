@@ -1,6 +1,6 @@
 <template>
   <div class="container-fluid nopadding">
-    <v-vanta effect="net" :options="options"></v-vanta>
+    <v-vanta effect="net" :options="options" class="vanta"></v-vanta>
     <div class="card profileInfo">
       <h1>Hi, I'm <b style="color:lightpink">Mary grace Cordoto</b>. </h1>
       <h1>I am a Web Developer.</h1>
@@ -41,6 +41,12 @@ export default {
 <style>
 .nopadding{
   padding: 0px;
+}
+.vanta-container{
+  height: 100vh !important;
+}
+.section-background{
+  height: 100vh;
 }
 .profileInfo {
   font-style: initial;
