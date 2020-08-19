@@ -5,18 +5,18 @@
                 <form>
                 <h3>• Be in touch •</h3>
                 <br>
-                <input id="name" placeholder="Name" type="text" name="name" required="required" value>
+                <input id="name" placeholder="Name" type="text" name="name" required value>
                 <input
                     id="email"
                     placeholder="Enter email"
                     type="email"
                     name="email"
-                    required="required"
+                    required 
                     value
                 >
                 <textarea placeholder="Enter your message"></textarea>
                 <br>
-                <button id="send" class="button" type="submit">Submit</button>
+                <button id="send" class="button" type="submit" >Submit</button>
                 </form>
             </div>
         </center>
@@ -24,7 +24,14 @@
 </template>
 
 <script>
-export default {}
+import router from '../router'
+export default {
+  methods: {
+    redirect (url) {
+      router.push(url)
+    }
+  }, 
+}
 </script>
 
 <style scoped>
